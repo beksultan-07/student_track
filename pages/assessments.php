@@ -10,20 +10,8 @@
 	<link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-	<header class="header">
-		<div class="container">
-			<div class="header__content">
-				<a href="./index.html" class="logo">StudentsTrack</a>
 
-
-				<nav class="header__nav">
-					<a href="./index.html" class="header-link">Tableau de bord</a>
-					<a href="./students.html" class="header-link">Étudiants</a>
-					<a href="./assessments.html" class="header-link">Évaluations</a>
-				</nav>
-			</div>
-		</div>
-	</header>
+	<?php require __DIR__ . '/../components/header.php'; ?>
 
 	<main>
 		<section class="examsTable">
@@ -37,29 +25,8 @@
 				<h1 class="titleOfPage">Évaluations</h1>
 
 				<div class="table-container">
-					<table class="table exams-table">
-						<tr>
-							<th>Évaluation</th>
-							<th>Matière</th>
-							<th>Moyenne</th>
-						</tr>
-						<tr>
-							<td>HTML – Structure d'une page</td>
-							<td>TC2 Web</td>
-							<td>14,2</td>
-						</tr>
-						<tr>
-							<td>CSS – Sélecteurs</td>
-							<td>TC2 Web</td>
-							<td>13,1</td>
-						</tr>
-						<tr>
-							<td>Introduction SQL</td>
-							<td>D4</td>
-							<td>12,8</td>
-						</tr>
-					</table>
-				</dвшм>
+					<?php require __DIR__ . '/../components/examsTable.php'; ?>
+				</div>
 				
 
 			</div>

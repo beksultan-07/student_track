@@ -10,20 +10,14 @@
 	<link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-	<header class="header">
-		<div class="container">
-			<div class="header__content">
-				<a href="./index.html" class="logo">StudentsTrack</a>
-
-
-				<nav class="header__nav">
-					<a href="./index.html" class="header-link">Tableau de bord</a>
-					<a href="./students.html" class="header-link">Étudiants</a>
-					<a href="./assessments.html" class="header-link">Évaluations</a>
-				</nav>
-			</div>
-		</div>
-	</header>
+	<?php
+		$appName = 'Studentrack';
+		$currentPromotion = 'SIO1';
+		$schoolYear = '2026-2027';
+	?>
+	
+	<?php require __DIR__ . '/../components/header.php'; ?>
+	
 
 	<main>
 		<section class="students">
@@ -41,7 +35,8 @@
 				<ul class="mainInfo__list">
 					<li class="mainInfo__list__item">
 						<span class="mainInfo__text">Promotion :</span>
-						<span class="mainInfo__text">SIO1 – 2026/2027</span>
+						<span class="mainInfo__text">
+							<?php echo $currentPromotion; ?> – <?php echo $schoolYear; ?></span>
 					</li>
 					<li class="mainInfo__list__item">
 						<span class="mainInfo__text">Email: </span>
